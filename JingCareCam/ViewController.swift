@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet var titleLabel : UILabel!
     @IBOutlet var messageTextView : UITextView!
+    @IBOutlet var profile: UIImageView!
+    
+    var messageModel: JingCareCamModel?
     
     @IBAction func sendTapped(sender : AnyObject) {
         
@@ -20,14 +23,20 @@ class ViewController: UIViewController {
         
     }
     @IBAction func viewTapped(sender : AnyObject) {
-        
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        refreshUI()
+        if self.messageModel != nil {
+            titleLabel.text = self.messageModel!.title
+            messageTextView.text = self.messageModel!.message
+        }
+        
+        self.profile.layer.cornerRadius = self.profile.frame.size.width / 2
+        self.profile.clipsToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,13 +44,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    let careCam = JingCareCamModel(user: "John", title: "Remind John to enter his weight this morning", message:  "John, Don't forget to enter your weight this morning. It would be great if you did it before lunch. Thanks!")
-    
-    func refreshUI() {
-        titleLabel.text = careCam.title
-        messageTextView.text = careCam.message
-        
+    func populateWithMessage(message: JingCareCamModel) {
+        // populateWithMessage will get called before viewDidLoad
+        // we just save the model
+        self.messageModel = message
     }
-
+    
 }
 

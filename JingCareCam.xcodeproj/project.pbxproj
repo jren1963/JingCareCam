@@ -14,6 +14,7 @@
 		3F02CE411B0A6313004702E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F02CE3F1B0A6313004702E1 /* LaunchScreen.xib */; };
 		3F02CE4D1B0A6313004702E1 /* JingCareCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02CE4C1B0A6313004702E1 /* JingCareCamTests.swift */; };
 		3F02CE591B0A68DA004702E1 /* JingCareCamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02CE581B0A68DA004702E1 /* JingCareCamModel.swift */; };
+		ACFD356E1B0BB00300DAD4AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD356D1B0BB00300DAD4AA /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,8 @@
 		3F02CE461B0A6313004702E1 /* JingCareCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JingCareCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F02CE4B1B0A6313004702E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F02CE4C1B0A6313004702E1 /* JingCareCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JingCareCamTests.swift; sourceTree = "<group>"; };
-		3F02CE581B0A68DA004702E1 /* JingCareCamModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JingCareCamModel.swift; sourceTree = "<group>"; };
+		3F02CE581B0A68DA004702E1 /* JingCareCamModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JingCareCamModel.swift; sourceTree = SOURCE_ROOT; };
+		ACFD356D1B0BB00300DAD4AA /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 		3F02CE281B0A6313004702E1 = {
 			isa = PBXGroup;
 			children = (
-				3F02CE581B0A68DA004702E1 /* JingCareCamModel.swift */,
 				3F02CE331B0A6313004702E1 /* JingCareCam */,
 				3F02CE491B0A6313004702E1 /* JingCareCamTests */,
 				3F02CE321B0A6313004702E1 /* Products */,
@@ -80,7 +81,9 @@
 		3F02CE331B0A6313004702E1 /* JingCareCam */ = {
 			isa = PBXGroup;
 			children = (
+				3F02CE581B0A68DA004702E1 /* JingCareCamModel.swift */,
 				3F02CE361B0A6313004702E1 /* AppDelegate.swift */,
+				ACFD356D1B0BB00300DAD4AA /* FirstViewController.swift */,
 				3F02CE381B0A6313004702E1 /* ViewController.swift */,
 				3F02CE3A1B0A6313004702E1 /* Main.storyboard */,
 				3F02CE3D1B0A6313004702E1 /* Images.xcassets */,
@@ -218,6 +221,7 @@
 				3F02CE391B0A6313004702E1 /* ViewController.swift in Sources */,
 				3F02CE591B0A68DA004702E1 /* JingCareCamModel.swift in Sources */,
 				3F02CE371B0A6313004702E1 /* AppDelegate.swift in Sources */,
+				ACFD356E1B0BB00300DAD4AA /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
